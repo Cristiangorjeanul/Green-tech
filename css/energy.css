@@ -1,0 +1,139 @@
+#energy-container {
+  width: 212px;
+  height: 305px;
+  margin: auto;
+  background: rgba(0, 0, 0, 0.35);
+  border: 3.5px solid lime;
+}
+
+.cloud2 {
+  width: 80px;
+  height: 50px;
+  top: -10px;
+  position: relative;
+  animation: cloud2 35s infinite linear;
+  z-index: 0;
+}
+
+.shape2 {
+  width: 140px;
+  height: 35px;
+  background: white;
+  border-radius: 100px;
+  position: absolute;
+  z-index: 2;
+}
+
+.cloud2:after,
+.cloud2:before {
+  content: "";
+  position: absolute;
+  background: white;
+  z-index: 1;
+}
+
+.cloud2:after {
+  width: 50px;
+  height: 50px;
+  top: -25px;
+  left: 35px;
+  border-radius: 100px;
+}
+
+.cloud2:before {
+  width: 70px;
+  height: 70px;
+  top: -35px;
+  border-radius: 200px;
+  left: 80px;
+}
+
+@keyframes cloud2 {
+  0% {
+    left: -15px;
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(0.35);
+  }
+  100% {
+    left: 153px;
+    transform: scale(0);
+  }
+}
+
+.generator {
+  position: absolute;
+  top: 85px;
+  left: 45.5%;
+}
+
+.rotor {
+  width: 35px;
+  height: 35px;
+  background: lime;
+  border-radius: 50%;
+  position: absolute;
+  animation: rotation 5s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.blade {
+  width: 75px;
+  height: 10px;
+  background: lime;
+  position: absolute;
+  top: 12px;
+  left: 18px;
+  border-radius: 0 24px 40px 0;
+  transform-origin: 0 8px;
+}
+
+.blade:after {
+  content: "";
+  width: 1px;
+  position: absolute;
+  top: 1px;
+  left: 19px;
+  border-top: 20px solid lime;
+  border-right: 35px solid transparent;
+  border-left: 35px solid transparent;
+}
+
+.number1 {
+  transform: rotate(0deg);
+}
+
+.number2 {
+  transform: rotate(120deg);
+}
+
+.number3 {
+  transform: rotate(240deg);
+}
+
+.pole {
+  width: 22px;
+  margin: auto;
+  margin-left: 5px;
+  border-bottom: 205px solid lime;
+  border-right: 14px solid transparent;
+  border-left: 14px solid transparent;
+}
+
+.hill {
+  width: 100%;
+  height: 19px;
+  margin-top: 203px;
+  z-index: 1;
+  background: green;
+  border-radius: 50% 50% 0 0;
+}
