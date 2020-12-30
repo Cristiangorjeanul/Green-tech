@@ -193,33 +193,33 @@ img {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  background-color: white;
   box-shadow: 0.35px 0.35px 0 3.5px lime;
 }
 
 .drawing:nth-of-type(1) {
-  background: url(../assets/bike.jpg);
-  transform: rotateY(0deg) translateZ(270px);
+  background: url(../assets/bulb.jpg);
+  transform: rotateY(90deg) translateZ(171px);
 }
 
 .drawing:nth-of-type(2) {
-  background: url(../assets/bulb.jpg);
-  transform: rotateY(90deg) translateZ(270px);
+  background: url(../assets/containers.jpg);
+  transform: rotateY(180deg) translateZ(171px);
 }
 
 .drawing:nth-of-type(3) {
   background: url(../assets/faucet.jpg);
-  transform: rotateY(180deg) translateZ(270px);
+  transform: rotateY(270deg) translateZ(171px);
 }
 
 .drawing:nth-of-type(4) {
-  background: url(../assets/flowers.jpg);
-  transform: rotateY(270deg) translateZ(310px);
+  transform: rotateY(0deg) translateZ(171px);
 }
 
 .thumbnail {
   padding: 5px;
   border: 3.5px solid lime;
-  background-color:  rgba(0, 0, 0, 0.35);
+  background-color: rgba(0, 0, 0, 0.35);
   border-radius: 0;
   margin: 5px auto;
 }
