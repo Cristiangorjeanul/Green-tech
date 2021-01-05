@@ -110,18 +110,6 @@ h5 {
   padding-top: 8px;
 }
 
-.panel {
-  margin-top: 5px;
-  border: 1px solid blue;
-  border-radius: 0 !important;
-  transition: box-shadow 0.5s;
-  box-shadow: 10px 1px 50px rgba(0, 0, 0, 0.2);
-}
-
-.panel-body {
-  padding-top: 5px;
-}
-
 .col-sm-4 {
   padding: 1px;
 }
@@ -129,12 +117,6 @@ h5 {
 img {
   width: 85%;
   border: 3.5px solid lime;
-}
-
-.content .frontend {
-  width: 15%;
-  float: left;
-  margin-right: 20px;
 }
 
 .content p {
