@@ -3,11 +3,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
   
 //Switch & bulb
-const lightswitch = document.querySelector('.switch-button')
+const lightSwitch = document.querySelector('.switch-button')
 const filament = document.querySelector('.lightbulb')
 
-lightswitch.onclick = () => {
-  lightswitch.classList.toggle('on')
+lightSwitch.onclick = () => {
+  lightSwitch.classList.toggle('on')
   filament.classList.toggle('on')
 }
 

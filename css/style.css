@@ -3,9 +3,38 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  width: 100%;
-  min-height: 100vh;
+  height: 100%;
   background: black;
+}
+
+.jumbotron {
+  width: 100%;
+  background-color: white;
+  color: white;
+  border: 1px solid blue;
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/e/e3/Sustainable_electronics.jpeg);
+  background-size: 100%;
+  padding: 9px 1px 1px 1px;
+  font-family: Montserrat, sans-serif;
+}
+
+.container-fluid {
+  padding: 12px 1px 1px 1px;
+}
+
+.panel-heading {
+  color: white !important;
+  background-color: white !important;
+  padding-top: 15px;
+  padding-bottom: 29px;
+}
+
+.col-sm-12 {
+  padding-top: 8px;
+}
+
+.col-sm-4 {
+  padding: 1px;
 }
 
 .jumbotron h1 {
@@ -52,6 +81,7 @@ h3 {
   margin-top: 5px;
   margin-bottom: 1px;
   text-align: center;
+  font-weight: 100;
 }
 
 @media (min-width: 768px) {
@@ -82,36 +112,6 @@ h5 {
 .panel p {
   font-size: 15px;
   font-weight: 800;
-}
-
-.panel-heading {
-  color: white !important;
-  background-color: white !important;
-  padding-top: 15px;
-  padding-bottom: 29px;
-}
-
-.jumbotron {
-  width: 100%;
-  background-color: white;
-  color: white;
-  border: 1px solid blue;
-  background-image: url(https://upload.wikimedia.org/wikipedia/commons/e/e3/Sustainable_electronics.jpeg);
-  background-size: 100%;
-  padding: 9px 1px 1px 1px;
-  font-family: Montserrat, sans-serif;
-}
-
-.container-fluid {
-  padding: 12px 1px 1px 1px;
-}
-
-.col-sm-12 {
-  padding-top: 8px;
-}
-
-.col-sm-4 {
-  padding: 1px;
 }
 
 img {
