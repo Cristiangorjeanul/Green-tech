@@ -1,35 +1,56 @@
 
 document.addEventListener('DOMContentLoaded', function () {
 
-  //Header Slide show
-  const photos = document.querySelectorAll(".photo");
-  let currentSlide = 0;
-  const slideTimer = 2535;
+ 
+//Switch & bulb
+const lightSwitch = document.querySelector('.switch-button')
+const filament = document.querySelector('.lightbulb')
 
-  const changeSlides = () => {
-    photos.forEach((photo) => photo.style.opacity = 0)
+lightSwitch.onclick = () => {
+  lightSwitch.classList.toggle('on')
+  filament.classList.toggle('on')
+}
 
-    if (currentSlide !== photos.length - 1) {
-      currentSlide++;
-    } else {
-      currentSlide = 0;
+  //Rotating clock 
+  function showTime() {
+    
+    'use strict';
+    
+    var now = new Date(),
+        
+        hours = now.getHours(),
+        
+        minutes = now.getMinutes(),
+        
+        seconds = now.getSeconds();
+    
+    if (hours < 10) {
+        hours = "0" + hours;
     }
-    photos[currentSlide].style.opacity = 1;
-  };
-  setInterval(changeSlides, slideTimer);
+    
+    if (minutes < 10) {
+        minutes = "0" + minutes;
+    }
+    
+    if (seconds < 10) {
+        seconds = "0" + seconds;
+    }
+    
+    document.getElementById('clock').textContent = hours + ":" + minutes + ":" + seconds;
+    
+}
 
-  //Button
-  var button = document.querySelector('#button');
-  var counter = 1;
-  button.addEventListener('click', function () {
-    document.querySelector('#button span').innerText = counter;
-    counter++;
-  });
+window.onload = function () {
+    
+    'use strict';
+    
+    setInterval(showTime, 500);
+    
+};
+  
 
 
-  // Events
-  window.addEventListener('load', run);
-  window.addEventListener('resize', run);
-  window.addEventListener('scroll', run);
+
+
 
 }); 

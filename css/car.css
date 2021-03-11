@@ -227,6 +227,49 @@
   transform: skewX(37deg) skewY(30deg);
 }
 
+#flash-light {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  top: 50%;
+  left: 50%;
+  background-color: white;
+  border-radius: 50%;
+  box-shadow: 0 0 0 0 white;
+  animation: 2s flash-light-animation linear infinite;
+}
+
+@keyframes flash-light-animation {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 lightskyblue;
+  }
+  29% {
+    box-shadow: 5px 0 0 0 white;
+  }
+  35% {
+    box-shadow: 5px 0 23px 27px white;
+  }
+  38% {
+    box-shadow: 5px 0 0 0 white;
+  }
+  39% {
+    box-shadow: 0 0 0 0 lightskyblue;
+  }
+  51% {
+    box-shadow: 5px 0 0 0 white;
+  }
+  55% {
+    box-shadow: 5px 0 23px 27px white;
+  }
+  59% {
+    box-shadow: 5px 0 0 0 white;
+  }
+  60% {
+    box-shadow: 0 0 0 0 lightskyblue;
+  }
+}
+
 #rear-lights {
   position: relative;
   width: 10px;

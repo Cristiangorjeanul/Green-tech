@@ -180,17 +180,17 @@ img {
 }
 
 .drawing:nth-of-type(1) {
-  background: url(../assets/bulb.jpg);
+  background: url(../assets/bike.jpg);
   transform: rotateY(90deg) translateZ(171px);
 }
 
 .drawing:nth-of-type(2) {
-  background: url(../assets/containers.jpg);
+  background: url(../assets/bulb.jpg);
   transform: rotateY(180deg) translateZ(171px);
 }
 
 .drawing:nth-of-type(3) {
-  background: url(../assets/faucet.jpg);
+  background: url(../assets/bus.jpg);
   transform: rotateY(270deg) translateZ(171px);
 }
 
