@@ -190,7 +190,7 @@ img {
 }
 
 .drawing:nth-of-type(3) {
-  background: url(../assets/bus.jpg);
+  background: url(../assets/car.jpg);
   transform: rotateY(270deg) translateZ(171px);
 }
 
